@@ -18,8 +18,10 @@ email: 'hj894747@gmail.com'
 description: "I'm a software developer and designer from Suffolk creating useful things for the web."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thehcj.github.io" # the base hostname & protocol for your site, e.g. https://example.com
-bluesky_username: 'thehcj.github.io'
+bluesky_username: 'did:plc:5f2c6awh4ffekm7srmi4d6zg'
+twitter_username: ''
 github_username: 'TheHCJ'
+medium_username: ''
 
 # Build settings
 markdown: kramdown
