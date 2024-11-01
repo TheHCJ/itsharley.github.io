@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "Hello. I'm TheHCJ."
 email: 'hj894747@gmail.com'
-description: "I'm a software developer and designer from Suffolk creating useful things for the web."
+description: "I'm a open source software developer from Suffolk creating since twenty twenty three."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thehcj.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 bluesky_username: 'did:plc:5f2c6awh4ffekm7srmi4d6zg'
