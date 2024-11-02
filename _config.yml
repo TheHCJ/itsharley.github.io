@@ -103,3 +103,6 @@ enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/about', text: 'About' }
+
+#### Include .well-known
+include: [".well-known"]
