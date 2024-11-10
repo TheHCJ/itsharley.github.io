@@ -1,0 +1,19 @@
+html body {
+    text-align: center;
+    color: dimgray;
+    text-decoration-color: dimgray;
+    background-color: linen;
+}
+
+html ul {
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html a {
+    color: darkseagreen;
+    text-decoration-style:dashed;
+    text-decoration-color: darkseagreen;
+}
