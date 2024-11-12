@@ -17,3 +17,7 @@ html a {
     text-decoration-style:dashed;
     text-decoration-color: darkseagreen;
 }
+
+.ghfont {
+    font-family: SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+}
