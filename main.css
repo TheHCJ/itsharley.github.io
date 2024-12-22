@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Math&display=swap');
+
 html body {
-    text-align: center;
-    color: dimgray;
-    text-decoration-color: dimgray;
-    background-color: linen;
+    font-family: "Inter", serif;
+
+    padding: 5%;
+    
+    color: rgb(216, 233, 202);
+    text-decoration-color: rgb(89, 85, 93);
+    background-color: rgb(52, 138, 152);
 }
 
 html ul {
