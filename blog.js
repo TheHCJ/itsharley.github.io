@@ -32,3 +32,19 @@ function goBack() {
     document.getElementById('blog-content').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
 }
+
+function loadBlogList() {
+    fetch('blog/index.json')
+        .then(response => response.json())
+        .then(posts => {
+            const blogList = document.getElementById('blog-list');
+            posts.forEach(post => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `<p><a href="#" onclick="loadBlogPost('${post.filename}')">${post.date}: ${post.title}</a></p>`;
+                blogList.appendChild(listItem);
+            });
+        })
+        .catch(error => console.error('Error loading blog list:', error));
+}
+
+document.addEventListener('DOMContentLoaded', loadBlogList);
