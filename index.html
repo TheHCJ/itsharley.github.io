@@ -8,26 +8,32 @@
     <title>It's Harley!</title>
 </head>
 <body>
-    <h1>Hi, it's Harley!</h1>
-    <h2>I can code cool things</h2>
-    <br>
-    <h3>Featured Projects</h3>
-    <ul>
-        <li><p><a href="https://github.com/itsharley/Quacker">Quacker</a><br>The continuation of <a href="https://github.com/jonjomckay/fritter">fritter</a> with feeds</p></li>
-        <li><p><a href="https://github.com/itsharley/WordOfTheDay">Word Of The Day</a><br>An bot that posts a new word everyday to <a href="https://bsky.app/profile/did:plc:sulvqvqeu4diey3exan65emu">Bluesky</a></p></li>
-    </ul>
-    <br>
-    <h3>Blog</h3>
-    <ul>
-        <li><p><a href="blog/13-11-2024_Quacker-Unarchived.html">13-11-2024: Quacker unarchived</a></p></li>
-        <li><p><a href="blog/12-11-2024_Hello-World.html">12-11-2024: Hello World!</a></p></li>
-    </ul>
-    <br>
-    <h3>Links</h3>
-    <ul>
-        <li><a href="https://bsky.app/profile/did:plc:5f2c6awh4ffekm7srmi4d6zg">Bluesky</a></li>
-        <li><a href="https://fosstodon.org/@hcj">Mastodon</a></li>
-        <li><a href="https://github.com/itsharley">GitHub</a></li>
-    </ul>
+    <div id="main-content">
+        <h1>Hi, it's Harley!</h1>
+        <h2>I can code cool things</h2>
+        <br>
+        <h3>Featured Projects</h3>
+        <ul>
+            <li><p><a href="https://github.com/itsharley/Quacker">Quacker</a><br>The continuation of <a href="https://github.com/jonjomckay/fritter">fritter</a> with feeds</p></li>
+            <li><p><a href="https://github.com/itsharley/WordOfTheDay">Word Of The Day</a><br>An bot that posts a new word everyday to <a href="https://bsky.app/profile/did:plc:sulvqvqeu4diey3exan65emu">Bluesky</a></p></li>
+        </ul>
+        <br>
+        <h3>Blog<noscript> | Sorry, this requires javascript :(</noscript></h3>
+        <ul>
+            <li><p><a href="#" onclick="loadBlogPost('13-11-2024_Quacker-Unarchived.md')">13-11-2024: Quacker unarchived</a></p></li>
+            <li><p><a href="#" onclick="loadBlogPost('12-11-2024_Hello-World.md')">12-11-2024: Hello World!</a></p></li>
+        </ul>
+        <br>
+        <h3>Links</h3>
+        <ul>
+            <li><a href="https://bsky.app/profile/did:plc:5f2c6awh4ffekm7srmi4d6zg">Bluesky</a></li>
+            <li><a href="https://fosstodon.org/@hcj">Mastodon</a></li>
+            <li><a href="https://github.com/itsharley">GitHub</a></li>
+        </ul>
+    </div>
+
+    <div id="blog-content" style="display: none;"></div>
+
+    <script src="blog.js"></script>
 </body>
 </html>

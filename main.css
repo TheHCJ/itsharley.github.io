@@ -4,7 +4,7 @@ html body {
     font-family: "Inter", serif;
 
     padding: 5%;
-    
+
     color: rgb(216, 233, 202);
     text-decoration-color: rgb(89, 85, 93);
     background-color: rgb(52, 138, 152);
@@ -21,6 +21,18 @@ html a {
     color: darkseagreen;
     text-decoration-style:dashed;
     text-decoration-color: darkseagreen;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+
+    color: darkseagreen;
+    text-decoration-style:dashed;
+    text-decoration-color: darkseagreen;
+
+    font-size: larger;
 }
 
 .ghfont {
