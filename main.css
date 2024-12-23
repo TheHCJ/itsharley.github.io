@@ -38,3 +38,7 @@ button {
 .ghfont {
     font-family: SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
 }
+
+.small-font {
+    font-size: xx-small;
+}
