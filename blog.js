@@ -24,6 +24,7 @@ function loadBlogPost(filename) {
             const blogContent = document.getElementById('blog-content');
             blogContent.innerHTML = `<button onclick="goBack()">Back</button>` + content;
             blogContent.style.display = 'block';
+            window.location.hash = `#${filename}`;
         })
         .catch(error => console.error('Error loading blog post:', error));
 }
@@ -31,6 +32,7 @@ function loadBlogPost(filename) {
 function goBack() {
     document.getElementById('blog-content').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
+    window.location.hash = '';
 }
 
 function loadBlogList() {
@@ -40,11 +42,23 @@ function loadBlogList() {
             const blogList = document.getElementById('blog-list');
             posts.forEach(post => {
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `<p><a href="#" onclick="loadBlogPost('${post.filename}')">${post.date}: ${post.title}</a></p>`;
+                listItem.innerHTML = `<p><a href="#${post.filename}" onclick="loadBlogPost('${post.filename}')">${post.date}: ${post.title}</a></p>`;
                 blogList.appendChild(listItem);
             });
         })
         .catch(error => console.error('Error loading blog list:', error));
 }
 
-document.addEventListener('DOMContentLoaded', loadBlogList);
+function loadBlogPostFromHash() {
+    const hash = window.location.hash.substring(1);
+    if (hash) {
+        loadBlogPost(hash);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadBlogList();
+    loadBlogPostFromHash();
+});
+
+window.addEventListener('hashchange', loadBlogPostFromHash);
